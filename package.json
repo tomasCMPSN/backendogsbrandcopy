@@ -1,0 +1,14 @@
+{
+  "name": "backendogsbrandcopy",
+  "version": "1.0.0",
+  "description": "Og's Brand Backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomas Campusano",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
