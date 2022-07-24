@@ -13,3 +13,5 @@
 ## Dependencies:
 
 * Express.js
+* babel-cli
+* babel-preset-env
