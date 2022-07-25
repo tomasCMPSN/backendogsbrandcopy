@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node src/index.js",
-    "babel-node": "babel-node --presets=env"
+    "babel-node": "babel-node --presets=env",
+    "dev": "nodemon --exec npm run babel-node ./src/index.js"
   },
   "author": "Tomas Campusano",
   "license": "ISC",
