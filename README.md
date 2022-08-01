@@ -15,3 +15,8 @@
 * Express.js
 * babel-cli
 * babel-preset-env
+* cors
+* morgan
+* nodemon
+* mongoose
+* dotenv
