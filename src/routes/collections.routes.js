@@ -8,4 +8,7 @@ routerCollections
   .get(collectionCtrl.listCollections)
   .post(collectionCtrl.createCollection);
 
+routerCollections
+  .route("/collections/:id")
+  .get(collectionCtrl.obtainCollection);
 export default routerCollections;

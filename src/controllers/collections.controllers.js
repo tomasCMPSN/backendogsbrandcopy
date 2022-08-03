@@ -25,4 +25,9 @@ collectionCtrl.createCollection = async (req, res) => {
   });
 };
 
+collectionCtrl.obtainCollection = async (req, res) => {
+  const findCollection = await Collection.findById(req.params.id);
+  res.status(200).json(findCollection)
+}
+
 export default collectionCtrl;
