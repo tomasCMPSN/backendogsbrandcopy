@@ -2,8 +2,9 @@ import { validateCollectionName } from "../helpers/ValidateFields";
 import Collection from "../models/collection";
 const collectionCtrl = {};
 
-collectionCtrl.listCollections = (req, res) => {
-  res.send("get route");
+collectionCtrl.listCollections = async (req, res) => {
+  const allCollections = await Collection.find();
+  res.status(200).json(allCollections)
 };
 
 collectionCtrl.createCollection = async (req, res) => {
