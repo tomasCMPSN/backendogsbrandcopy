@@ -10,5 +10,5 @@ routerCollections
 
 routerCollections
   .route("/collections/:id")
-  .get(collectionCtrl.obtainCollection);
+  .get(collectionCtrl.obtainCollection).put(collectionCtrl.updateCollection)
 export default routerCollections;

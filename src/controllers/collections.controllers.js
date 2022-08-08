@@ -30,4 +30,11 @@ collectionCtrl.obtainCollection = async (req, res) => {
   res.status(200).json(findCollection)
 }
 
+collectionCtrl.updateCollection = async (req, res) => {
+  await Collection.findByIdAndUpdate(req.params.id, req.body)
+  res.status(200).json({
+    msg: "Collection Updated"
+  })
+}
+
 export default collectionCtrl;
