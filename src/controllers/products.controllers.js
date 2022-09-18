@@ -62,4 +62,11 @@ productCtrl.obtainProduct = async (req, res) => {
   res.status(200).json(result);
 }
 
+productCtrl.updateProduct = async (req, res) => {
+  await Product.findByIdAndUpdate(req.params.id, req.body);
+  res.status(200).json({
+    msg: "Product Updated",
+  });
+};
+
 export default productCtrl;

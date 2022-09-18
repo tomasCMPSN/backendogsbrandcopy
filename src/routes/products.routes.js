@@ -5,5 +5,8 @@ const routerProducts = Router();
 
 routerProducts.route("/products").post(productCtrl.createProduct);
 
-routerProducts.route("/products/:id").get(productCtrl.obtainProduct);
+routerProducts
+  .route("/products/:id")
+  .get(productCtrl.obtainProduct)
+  .put(productCtrl.updateProduct);
 export default routerProducts;
