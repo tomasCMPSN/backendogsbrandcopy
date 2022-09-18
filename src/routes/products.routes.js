@@ -8,5 +8,6 @@ routerProducts.route("/products").post(productCtrl.createProduct);
 routerProducts
   .route("/products/:id")
   .get(productCtrl.obtainProduct)
-  .put(productCtrl.updateProduct);
+  .put(productCtrl.updateProduct)
+  .delete(productCtrl.deleteProduct);
 export default routerProducts;
