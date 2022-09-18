@@ -17,7 +17,10 @@ collectionCtrl.createCollection = async (req, res) => {
   }
   const collectionNew = new Collection({
     title: req.body.title,
-    products: [],
+    products: {
+      type: Array,
+      default: []
+    }
   });
   await collectionNew.save();
   res.status(201).json({

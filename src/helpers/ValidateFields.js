@@ -12,7 +12,7 @@ export const validateCollectionName = (field) => {
 };
 
 export const validatePrice = (field) => {
-  if (regExpPrice.test(field) && field.trim() !== "") {
+  if (regExpPrice.test(field)) {
     return true;
   } else {
     return false;
@@ -21,10 +21,7 @@ export const validatePrice = (field) => {
 
 export const validateColor = (field) => {
   if (
-    regExpPrice.test(field) &&
-    field.trim() !== "" &&
-    field.trim() > 0 &&
-    field.trim() < 4
+    regExpPrice.test(field)
   ) {
     return true;
   } else {

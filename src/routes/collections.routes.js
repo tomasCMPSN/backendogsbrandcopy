@@ -13,4 +13,5 @@ routerCollections
   .get(collectionCtrl.obtainCollection)
   .put(collectionCtrl.updateCollection)
   .delete(collectionCtrl.deleteCollection);
+
 export default routerCollections;

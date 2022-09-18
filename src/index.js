@@ -3,6 +3,7 @@ import morgan from "morgan";
 import cors from "cors";
 import path from 'path';
 import routerCollections from "./routes/collections.routes";
+import routerProducts from "./routes/products.routes";
 import './database'
 
 const app = express();
@@ -20,4 +21,5 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname,'../public')));
 
-app.use('/apiogsbrandcopy', routerCollections)
+app.use('/apiogsbrandcopy', routerCollections);
+app.use('/apiogsbrandcopy', routerProducts);

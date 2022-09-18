@@ -1,15 +1,20 @@
-import mongoose, {Schema} from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
-const collectionSchema = new Schema({
-    title:{
-        type: String,
-        minlength: 1,
-        maxlength: 100,
-        required:true
+const collectionSchema = new Schema(
+  {
+    title: {
+      type: String,
+      minlength: 1,
+      maxlength: 100,
+      required: true,
     },
-    products:[  ],
-});
+  },
+  {
+    timestamps: true,
+    versionKey:false
+  }
+);
 
-const Collection = mongoose.model('collection', collectionSchema);
+const Collection = mongoose.model("collection", collectionSchema);
 
-export default Collection
+export default Collection;
