@@ -73,7 +73,7 @@ productCtrl.deleteProduct = async (req, res) => {
   await Product.findByIdAndDelete(req.params.id);
   res.status(200).json({
     msg: "Product deleted",
-  });
+  })
 };
 
 export default productCtrl;
