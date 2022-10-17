@@ -30,73 +30,59 @@ const productSchema = new Schema({
   },
   color1Img2: {
     type: String,
-    maxlength: 400,
-    minlength: 1,
+    maxlength: 400
   },
   color1Img3: {
     type: String,
-    maxlength: 400,
-    minlength: 1,
+    maxlength: 400
   },
   color1Img4: {
     type: String,
-    maxlength: 400,
-    minlength: 1,
+    maxlength: 400
   },
   color1Img5: {
     type: String,
-    maxlength: 400,
-    minlength: 1,
+    maxlength: 400
   },
   color2Img1: {
     type: String,
-    maxlength: 400,
-    minlength: 1,
+    maxlength: 400
   },
   color2Img2: {
     type: String,
-    maxlength: 400,
-    minlength: 1,
+    maxlength: 400
   },
   color2Img3: {
     type: String,
-    maxlength: 400,
-    minlength: 1,
+    maxlength: 400
   },
   color2Img4: {
     type: String,
-    maxlength: 400,
-    minlength: 1,
+    maxlength: 400
   },
   color2Img5: {
     type: String,
-    maxlength: 400,
-    minlength: 1,
+    maxlength: 400
   },
   color3Img1: {
     type: String,
-    maxlength: 400,
-    minlength: 1,
+    maxlength: 400
   },
   color3Img2: {
     type: String,
-    maxlength: 400,
-    minlength: 1,
+    maxlength: 400
   },
   color3Img3: {
     type: String,
-    maxlength: 400,
-    minlength: 1,
+    maxlength: 400
   },
   color3Img4: {
     type: String,
-    maxlength: 400,
-    minlength: 1,
+    maxlength: 400
   },
   color3Img5: {
     type: String,
-    maxlength: 400,
-    minlength: 1,
+    maxlength: 400
   },
 });
 

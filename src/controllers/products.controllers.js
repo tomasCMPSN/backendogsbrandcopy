@@ -8,6 +8,16 @@ import mongoose from "mongoose";
 
 const productCtrl = {};
 
+productCtrl.listProducts = async (req, res) => {
+  const allProduts = await Product.find();
+  res.status(200).json(allProduts)
+}
+
+productCtrl.getProduct = async (req, res) => {
+  const findProduct = await Product.findById(req.params.id)
+  res.status(200).json(findProduct)
+}
+
 productCtrl.createProduct = async (req, res) => {
   if (
     !validateCollectionName(req.body.name) ||
