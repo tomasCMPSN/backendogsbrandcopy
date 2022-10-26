@@ -5,6 +5,7 @@ import path from 'path';
 import routerCollections from "./routes/collections.routes";
 import routerProducts from "./routes/products.routes";
 import './database'
+import routerHomeData from "./routes/homeData.routes";
 
 const app = express();
 
@@ -23,3 +24,4 @@ app.use(express.static(path.join(__dirname,'../public')));
 
 app.use('/apiogsbrandcopy', routerCollections);
 app.use('/apiogsbrandcopy', routerProducts);
+app.use('/apiogsbrandcopy', routerHomeData);
