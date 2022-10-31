@@ -28,6 +28,11 @@ homeDataCtrl.createHomeData = async (req, res) => {
   });
 };
 
+homeDataCtrl.obtainHomeData = async (req, res) => {
+  const findHomeData = await HomeData.findById(req.params.id);
+  res.status(200).json(findHomeData);
+};
+
 homeDataCtrl.updateHomeData = async (req, res) => {
   await HomeData.findByIdAndUpdate(req.params.id, req.body);
   res.status(200).json({

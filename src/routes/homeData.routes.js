@@ -10,6 +10,7 @@ routerHomeData
 
 routerHomeData
   .route("/homedata/:id")
+  .get(homeDataCtrl.obtainHomeData)
   .put(homeDataCtrl.updateHomeData)
   .delete(homeDataCtrl.deleteHomeData);
 
