@@ -20,6 +20,12 @@ const productSchema = new Schema(
       minlength: 1,
       required: true,
     },
+    description: {
+      type: String,
+      maxlength: 999999,
+      minlength: 1,
+      required: true,
+    },
     collectionid: {
       type: mongoose.Types.ObjectId,
     },
