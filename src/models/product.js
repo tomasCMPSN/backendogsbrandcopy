@@ -26,6 +26,10 @@ const productSchema = new Schema(
       minlength: 1,
       required: true,
     },
+    sizesData: {
+      type: Array,
+      maxlength: 7,
+    },
     collectionid: {
       type: mongoose.Types.ObjectId,
     },
