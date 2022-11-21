@@ -34,6 +34,7 @@ productCtrl.createProduct = async (req, res) => {
     price: req.body.price,
     colors: req.body.colors,
     description: req.body.description,
+    weight: req.body.weight,
     sizesData: req.body.sizesData,
     collectionid: req.body.collectionid,
     color1Name: req.body.color1Name,

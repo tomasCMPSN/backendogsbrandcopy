@@ -26,6 +26,12 @@ const productSchema = new Schema(
       minlength: 1,
       required: true,
     },
+    weight: {
+      type: Number,
+      maxlength: 999999,
+      minlength: 1,
+      required: true,
+    },
     sizesData: {
       type: Array,
       maxlength: 7,
