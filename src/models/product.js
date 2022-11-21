@@ -33,6 +33,12 @@ const productSchema = new Schema(
     collectionid: {
       type: mongoose.Types.ObjectId,
     },
+    color1Name:{
+      type: String,
+      maxlength: 400,
+      minlength: 1,
+      required: true,
+    },
     color1Img1: {
       type: String,
       maxlength: 400,
@@ -55,6 +61,10 @@ const productSchema = new Schema(
       type: String,
       maxlength: 400,
     },
+    color2Name: {
+      type: String,
+      maxlength: 400,
+    },
     color2Img1: {
       type: String,
       maxlength: 400,
@@ -72,6 +82,10 @@ const productSchema = new Schema(
       maxlength: 400,
     },
     color2Img5: {
+      type: String,
+      maxlength: 400,
+    },
+    color3Name: {
       type: String,
       maxlength: 400,
     },
