@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";
@@ -25,3 +27,6 @@ app.use(express.static(path.join(__dirname,'../public')));
 app.use('/apiogsbrandcopy', routerCollections);
 app.use('/apiogsbrandcopy', routerProducts);
 app.use('/apiogsbrandcopy', routerHomeData);
+
+const userRoutes = require('./routes/users.routes')
+app.use('/apiogsbrandcopy', userRoutes)

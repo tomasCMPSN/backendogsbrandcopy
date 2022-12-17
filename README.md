@@ -9,10 +9,10 @@
 
 * MongoDB
 * Node.js
+* Express.js
 
 ## Dependencies:
 
-* Express.js
 * babel-cli
 * babel-preset-env
 * cors
@@ -20,3 +20,6 @@
 * nodemon
 * mongoose
 * dotenv
+* bcrypt
+* jsonwebtoken
+* validator
