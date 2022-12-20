@@ -2,6 +2,8 @@
 
 **I don't have the rights of OG's, i did this just for practice.**
 
+This backend on railway.app right now
+
 [Original Website](https://www.ogsbrand.com/en/)
 [Frontend](https://github.com/tomasCMPSN/ogsbrandcopy)
 
